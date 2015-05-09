@@ -10,39 +10,41 @@ by Jussi Pakkanen.
 This version of Cuneiform has been tested to work on the following
 platforms.
 
-Linux
-FreeBSD
-OS X
-Windows using MSVC, MinGW, and Cygwin
+* Linux
+* FreeBSD
+* OS X
+* Windows using MSVC, MinGW, and Cygwin
+
+###Contributors
 
 The following people have sent patches or have otherwise helped the
 project. If someone is missing, please let me know, so I can add them.
 
-Keith Beaumont
-Vincent Wagelaar
-zanin
-Alexander Schlegel
-Alex Samorukov
-yaleks
-Serj Poltavskiy
-René Rebe
-Aleks Kuzemko
-Tonal
-Mike Ladwig
-Dmitri Polevoy
-Steven Van Ingelgem
-Sven Eckelmann
-Benjamin Kluck
-raff
-Julien
-John A
-Frik
-Jakub Wilk
-monday2000
-Dmitry Katsubo
+* Keith Beaumont
+* Vincent Wagelaar
+* zanin
+* Alexander Schlegel
+* Alex Samorukov
+* yaleks
+* Serj Poltavskiy
+* René Rebe
+* Aleks Kuzemko
+* Tonal
+* Mike Ladwig
+* Dmitri Polevoy
+* Steven Van Ingelgem
+* Sven Eckelmann
+* Benjamin Kluck
+* raff
+* Julien
+* John A
+* Frik
+* Jakub Wilk
+* monday2000
+* Dmitry Katsubo
+* Paulo Miguel Almeida Rodenas
 
-
-Caveats
+###Caveats
 
 There are known limitations in this port. Among these are the following:
 
@@ -53,17 +55,17 @@ There are known limitations in this port. Among these are the following:
 Patches to fix any of these issues are gladly accepted.
 
 
-Compiling on unix
+###Compiling on unix
 
 Extract the source and go to the root folder (the one this file is in).
 Then type the following commands:
-
+```Shell
 mkdir builddir
 cd builddir
 cmake -DCMAKE_BUILD_TYPE=debug ..
 make
 make install
-
+```
 By default Cuneiform installs to /usr/local. You can specify a different prefix
 by giving a command line switch "-DCMAKE_INSTALL_PREFIX=/what/ever/you/want"
 to CMake. You may need to set LD_LIBRARY_PATH if you install no a non-standard
@@ -76,13 +78,13 @@ Note that this does not use any optimizations. To enable them, replace
 and debug flags.
 
 
-Compiling on OSX
+###Compiling on OSX
 
 Follow the instructions for unix above. You can also try the Xcode project
 generator. It works but is not maintained.
 
 
-Compiling on Windows
+###Compiling on Windows
 
 Run CMake. Point it to the directory you extracted the source to. 
 Select a different directory for your build tree, You can not build inside
@@ -117,12 +119,13 @@ in the same directory. This works also when using Cuneiform
 as a library.
 
 
-Running
+###Running
 
 After install you simply run.
 
+```Shell
 cuneiform [-l language -o result_file -f [outputformat] extra_options ] <image_file>
-
+```
 Optional arguments are the following.
 
 --dotmatrix uses a recognition mode optimised for text printed with a
