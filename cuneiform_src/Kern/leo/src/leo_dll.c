@@ -2,33 +2,33 @@
 Copyright (c) 1993-2008, Cognitive Technologies
 All rights reserved.
 
-����������� ��������� ��������������� � ������������� ��� � ���� ��������� ����,
-��� � � �������� �����, � ����������� ��� ���, ��� ���������� ��������� �������:
+ Разрешается повторное распространение и использование как в виде исходного кода,
+ так и в двоичной форме, с изменениями или без, при соблюдении следующих условий:
 
-      * ��� ��������� ��������������� ��������� ���� ������ ���������� ���������
-        ���� ����������� �� ��������� �����, ���� ������ ������� � �����������
-        ����� �� ��������.
-      * ��� ��������� ��������������� ��������� ���� � ������������ �/��� �
-        ������ ����������, ������������ ��� ���������������, ������ �����������
-        ��������� ���� ���������� �� ��������� �����, ���� ������ ������� �
-        ����������� ����� �� ��������.
-      * �� �������� Cognitive Technologies, �� ����� �� ����������� �� �����
-        ���� ������������ � �������� �������� ��������� �/��� �����������
-        ���������, ���������� �� ���� ��, ��� ���������������� �����������
-        ����������.
+ 	* При повторном распространении исходного кода должны оставаться указанное
+ 	  выше уведомление об авторском праве, этот список условий и последующий
+ 	  отказ от гарантий.
+ 	* При повторном распространении двоичного кода в документации и/или в
+ 	  других материалах, поставляемых при распространении, должны сохраняться
+ 	  указанная выше информация об авторском праве, этот список условий и
+ 	  последующий отказ от гарантий.
+ 	* Ни название Cognitive Technologies, ни имена ее сотрудников не могут
+ 	  быть использованы в качестве средства поддержки и/или продвижения
+ 	  продуктов, основанных на этом ПО, без предварительного письменного
+ 	  разрешения.
 
-��� ��������� ������������� ����������� ��������� ���� �/��� ������� ������ "���
-��� ����" ��� ������-���� ���� ��������, ���������� ���� ��� ���������������,
-������� �������� ������������ �������� � ����������� ��� ���������� ����, �� ��
-������������� ���. �� �������� ��������� ���� � �� ���� ������ ����, �������
-����� �������� �/��� �������� �������������� ���������, �� � ���� ������ ��
-��Ѩ� ���������������, ������� ����� �����, ���������, ����������� ���
-������������� ������, ��������� � �������������� ��� ���������� ����������
-������������� ������������� ��������� (������� ������ ������, ��� ������,
-������� ���������, ��� ������ �/��� ������ �������, ���������� ��-�� ��������
-������� ��� �/��� ������ ��������� �������� ��������� � ������� �����������,
-�� �� ������������� ����� ��������), �� �� ������������� ���, ���� ���� �����
-�������� ��� ������ ���� ���� �������� � ����������� ����� ������� � ������.
+ ЭТА ПРОГРАММА ПРЕДОСТАВЛЕНА ВЛАДЕЛЬЦАМИ АВТОРСКИХ ПРАВ И/ИЛИ ДРУГИМИ ЛИЦАМИ "КАК
+ ОНА ЕСТЬ" БЕЗ КАКОГО-ЛИБО ВИДА ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,
+ ВКЛЮЧАЯ ГАРАНТИИ КОММЕРЧЕСКОЙ ЦЕННОСТИ И ПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ, НО НЕ
+ ОГРАНИЧИВАЯСЬ ИМИ. НИ ВЛАДЕЛЕЦ АВТОРСКИХ ПРАВ И НИ ОДНО ДРУГОЕ ЛИЦО, КОТОРОЕ
+ МОЖЕТ ИЗМЕНЯТЬ И/ИЛИ ПОВТОРНО РАСПРОСТРАНЯТЬ ПРОГРАММУ, НИ В КОЕМ СЛУЧАЕ НЕ
+ НЕСЁТ ОТВЕТСТВЕННОСТИ, ВКЛЮЧАЯ ЛЮБЫЕ ОБЩИЕ, СЛУЧАЙНЫЕ, СПЕЦИАЛЬНЫЕ ИЛИ
+ ПОСЛЕДОВАВШИЕ УБЫТКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ИЛИ ПОНЕСЕННЫЕ ВСЛЕДСТВИЕ
+ НЕВОЗМОЖНОСТИ ИСПОЛЬЗОВАНИЯ ПРОГРАММЫ (ВКЛЮЧАЯ ПОТЕРИ ДАННЫХ, ИЛИ ДАННЫЕ,
+ СТАВШИЕ НЕГОДНЫМИ, ИЛИ УБЫТКИ И/ИЛИ ПОТЕРИ ДОХОДОВ, ПОНЕСЕННЫЕ ИЗ-ЗА ДЕЙСТВИЙ
+ ТРЕТЬИХ ЛИЦ И/ИЛИ ОТКАЗА ПРОГРАММЫ РАБОТАТЬ СОВМЕСТНО С ДРУГИМИ ПРОГРАММАМИ,
+ НО НЕ ОГРАНИЧИВАЯСЬ ЭТИМИ СЛУЧАЯМИ), НО НЕ ОГРАНИЧИВАЯСЬ ИМИ, ДАЖЕ ЕСЛИ ТАКОЙ
+ ВЛАДЕЛЕЦ ИЛИ ДРУГОЕ ЛИЦО БЫЛИ ИЗВЕЩЕНЫ О ВОЗМОЖНОСТИ ТАКИХ УБЫТКОВ И ПОТЕРЬ.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -530,10 +530,10 @@ return leo_open_cont_temp();
 
 LEO_FUNC(Bool32)  LEOPushAlphabetType(uchar alpha_valid, uchar isPrint)
 {
-char my_alpha_cap[]="��������������������������������";
+char my_alpha_cap[]="\xC9\xD6\xD3\xCA\xC5\xCD\xC3\xD8\xD9\xC7\xD5\xDA\xD4\xDB\xC2\xC0\xCF\xD0\xCE\xCB\xC4\xC6\xDD\xDF\xD7\xD1\xCC\xC8\xD2\xDC\xC1\xD";
 char my_digit[]="0123456789";
 char my_roma[]="VIX"; //MCD";
-char my_alpha_cap_and_digit[]="��������������������������������/0123456789";
+char my_alpha_cap_and_digit[]="ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ/0123456789";
 char *palph, al[256]={0};
 
 
@@ -622,12 +622,12 @@ for(eng=all=rus=leo_alpha_type=i=0;i<256;i++)
 	}
 leo_current_alpha_ndx=leo_register_alphabet(alphabet);
 prn_roma_regim = (
-        !ansi_letters[(uchar)'�'] &&
+        !ansi_letters[(uchar)'\xc0'] &&
         ansi_letters['I'] &&
-        ansi_letters[(uchar)'�'] &&
-        ansi_letters[(uchar)'�'] &&
-        ansi_letters[(uchar)'�'] &&
-        ansi_letters[(uchar)'�'] &&
+        ansi_letters[(uchar)'\xcf'] &&
+        ansi_letters[(uchar)'\xd3'] &&
+        ansi_letters[(uchar)'\xd5'] &&
+        ansi_letters[(uchar)'\xd8'] &&
         ansi_letters['1']);
 
 if( leo_alpha_type&ALPH_R_E )
@@ -726,14 +726,6 @@ LEO_FUNC( void   )      LEORegisterSnpTree(
                               )
 {
    SnpSetTools( p_snp_tools );    // may be NULL, it's OK
-#ifdef DPUMA_SNAP
-   {
-	SnpTreeNode p;
-	SnpAddNode(&p,"������������� �����...",NULL);
-    parent = (SnpTreeNode*)&p;
-   }
-// ��� Parent = NULL, ���� �������� -  ������
-#endif
    SnpAddNode( &stnCharRecog,
       "Show Leo LTR Recognize results",  parent);
    SnpAddNode( &stnSnapCharRecog,
@@ -1012,21 +1004,21 @@ static Bool32 leo_near_letters(RecVersions *fon,uchar leo_code)
 {
 if( fon->lnAltCnt<2 )
     return FALSE;
-if( !(leo_strchr_codes_ansi("0��",  fon->Alt[0].Code) &&
-      leo_strchr_codes_ansi("0��",  leo_code) &&
-      leo_strchr_codes_ansi("0��",  fon->Alt[1].Code)) &&
-    !(leo_strchr_codes_ansi("3��",  fon->Alt[0].Code) &&
-      leo_strchr_codes_ansi("3��",  leo_code) &&
-      leo_strchr_codes_ansi("3��",  fon->Alt[1].Code)) &&
-    !(leo_strchr_codes_ansi("����", fon->Alt[0].Code) &&
-      leo_strchr_codes_ansi("����", leo_code) &&
-      leo_strchr_codes_ansi("����", fon->Alt[1].Code)) &&
-    !(leo_strchr_codes_ansi("����", fon->Alt[0].Code) &&
-      leo_strchr_codes_ansi("����", leo_code) &&
-      leo_strchr_codes_ansi("����", fon->Alt[1].Code)) &&
-    !(leo_strchr_codes_ansi("�6", fon->Alt[0].Code) &&
-      leo_strchr_codes_ansi("�6", leo_code) &&
-      leo_strchr_codes_ansi("�6", fon->Alt[1].Code)))
+if( !(leo_strchr_codes_ansi("0\xEE\xCE",  fon->Alt[0].Code) &&
+      leo_strchr_codes_ansi("0\xEE\xCE",  leo_code) &&
+      leo_strchr_codes_ansi("0\xEE\xCE",  fon->Alt[1].Code)) &&
+    !(leo_strchr_codes_ansi("3xE7\xC7",  fon->Alt[0].Code) &&
+      leo_strchr_codes_ansi("3xE7\xC7",  leo_code) &&
+      leo_strchr_codes_ansi("3xE7\xC7",  fon->Alt[1].Code)) &&
+    !(leo_strchr_codes_ansi("\xEF\xCF\xEB\xCB", fon->Alt[0].Code) &&
+      leo_strchr_codes_ansi("\xEF\xCF\xEB\xCB", leo_code) &&
+      leo_strchr_codes_ansi("\xEF\xCF\xEB\xCB", fon->Alt[1].Code)) &&
+    !(leo_strchr_codes_ansi("\xE8\xC8\xED\xCD", fon->Alt[0].Code) &&
+      leo_strchr_codes_ansi("\xE8\xC8\xED\xCD", leo_code) &&
+      leo_strchr_codes_ansi("\xE8\xC8\xED\xCD", fon->Alt[1].Code)) &&
+    !(leo_strchr_codes_ansi("\xE1\x36", fon->Alt[0].Code) &&
+      leo_strchr_codes_ansi("\xE1\x36", leo_code) &&
+      leo_strchr_codes_ansi("\xE1\x36", fon->Alt[1].Code)))
     return FALSE;
 return (fon->Alt[0].Prob-fon->Alt[1].Prob<5);
 }
@@ -1064,11 +1056,11 @@ return;
 
 
 
-// ����� � ������������
+// выбор и рспознавание
 #define POROG_NICE    250
 #define VERY_GOOD_FON 245
 //////////////////
-// ���������� ����� ������
+// установить новую оценку
 static int GetNewProb(int oldRec,int newRec,int nice)
 {
  int addRec=2;
@@ -1093,8 +1085,8 @@ static int GetNewProb(int oldRec,int newRec,int nice)
 	return MIN(254,MAX(newRec,oldRec+addRec));
 }
 ///////////
-// ���� ����� ���� ������ ������������ ?
-// (��� �����, ��� ����� - ��������, ����� ���� � �� ����)
+// надо взять иную первую альтернативу ?
+// (уже знаем, что новая - неплохая, иначе сюда и не идем)
 static Bool32 FonIsBetter(int newProb,int oldProb)
 {
  if( newProb <= 100)
@@ -1106,8 +1098,8 @@ static Bool32 FonIsBetter(int newProb,int oldProb)
  return FALSE;
 }
 //////////////
-// ������� ������ - � ���� � ������������� �����
-// ������ ������ ������������ �/��� ������
+// Функция выбора - я пока в экспериментах менял
+// только первую альтернативу и/или оценку
 
 Bool32 LEO_SelectOldNewOkr(RecVersions *verOld,RecVersions *verNew)
 {
@@ -1116,7 +1108,7 @@ uchar   oldprob;
   if( verOld->Alt[0].Code != verNew->Alt[0].Code )
   {
 //	  fprintf(basOut," MISS");
-// ����� ������������ �������� �������� ?
+// Новая альтернатива достойна внимания ?
 	  if( ( verNew->lnAltCnt == 1 ||
 		   verNew->lnAltCnt > 1 && verNew->Alt[0].Prob > verOld->Alt[1].Prob + 40 ) &&
 		   FonIsBetter(verNew->Alt[0].Prob, verOld->Alt[0].Prob) // data[14]
@@ -1130,7 +1122,7 @@ uchar   oldprob;
 	  return ret;
   }
 
-// ������ ������� - �������� (��������) ������
+// версии совпали - изменить (возможно) оценку
  oldprob=verOld->Alt[0].Prob;
   verOld->Alt[0].Prob = GetNewProb(verOld->Alt[0].Prob,verNew->Alt[0].Prob,POROG_NICE);
   if( oldprob!=verOld->Alt[0].Prob )
