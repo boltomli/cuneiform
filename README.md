@@ -1,5 +1,7 @@
 # Cuneiform OCR
-The reason why I've created this repo is because cuneiform is no longer been manteined which makes code improvements a lot harder to get accepted if not impossible. Unfortunatelly a developer trying to improve cuneiform has commited a few files using a different encoding which causes cuneiform to no build in some environments. So I've repaired 'em and upload the source code here.
+The reason why I've created this repo is because cuneiform is no longer been manteined which makes code improvements a lot harder to get accepted if not impossible. Unfortunatelly a developer trying to improve cuneiform has commited a few files using a different encoding which causes cuneiform to no build in some environments. So I've repaired 'em and upload the source code in this repo.
+
+http://bazaar.launchpad.net/~jpakkane/cuneiform-linux/trunk/revision/505#cuneiform_src/Kern/leo/src/leo_dll.c
 
 ### Description
 Cuneiform is an multi-language OCR system originally developed
