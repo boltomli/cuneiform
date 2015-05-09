@@ -1,7 +1,7 @@
-# Cuneiform for Linux
-A fork from the original cuneiform_ocr 
+# Cuneiform OCR
+The reason why I've created this repo is because cuneiform is no longer been manteined which makes code improvements a lot harder to get accepted if not impossible. Unfortunatelly a developer trying to improve cuneiform has commited a few files using a different encoding which causes cuneiform to no build in some environments. So I've repaired 'em and upload the source code here.
 
-
+### Description
 Cuneiform is an multi-language OCR system originally developed
 and open sourced by Cognitive Technologies. Cuneiform was
 originally a Windows program, which was ported to Linux
