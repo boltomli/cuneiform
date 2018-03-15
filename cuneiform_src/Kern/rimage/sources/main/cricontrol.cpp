@@ -594,8 +594,8 @@ Bool32 CRIControl::CreateDestinatonDIB(uint32_t BitCount)
 		return FALSE;
 	}
 
-	wNewHeight = (mbMarginsFlag ? abs(mrMargins.rmBottomMarg - mrMargins.rmTopMarg) : mpSourceDIB->GetLinesNumber());
-	wNewWidth = (mbMarginsFlag ? abs(mrMargins.rmLeftMarg - mrMargins.rmRightMarg) : mpSourceDIB->GetLineWidth());
+	wNewHeight = (mbMarginsFlag ? abs(static_cast<int>(mrMargins.rmBottomMarg - mrMargins.rmTopMarg)) : mpSourceDIB->GetLinesNumber());
+	wNewWidth = (mbMarginsFlag ? abs(static_cast<int>(mrMargins.rmLeftMarg - mrMargins.rmRightMarg)) : mpSourceDIB->GetLineWidth());
 	mpSourceDIB->GetResolutionDPM( &wXResolution, &wYResolution);
 
 	if ( !mpDestinationDIB->CreateDIBBegin( wNewWidth, wNewHeight, BitCount) )

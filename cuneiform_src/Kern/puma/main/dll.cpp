@@ -75,7 +75,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "compat_defs.h"
 
 //////////////////////////////////////////////////////////////////GLOBAL VARIABLES
-static char				 s_szVersion[] = "Version OCR Puma "__DATE__".";
+static char				 s_szVersion[] = "Version OCR Puma \"__DATE__\".";
 static uint16_t            gwHeightRC = 0;
 static uint32_t            gwRC = 0;
 static HANDLE            ghStorage = NULL;
